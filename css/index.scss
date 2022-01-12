@@ -1,0 +1,232 @@
+html{
+    margin:0;
+    padding:0;
+    max-width:100vw;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    box-sizing:border-box;
+
+    body{
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        word-wrap:break-word;
+
+        button{
+            transition:0.3s linear;
+        }
+        button:hover{
+            transform:scale(0.95);
+            cursor:pointer;
+        }
+
+        nav{
+            background-color:#E7F6FF;
+            max-width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items:center;
+
+            .logo{
+                width:20vw;
+                display:flex;
+                justify-content: center;
+
+                img{
+                    max-width:100%;
+                    height:auto;
+                }
+            }
+
+            .list ul{
+                display:flex;
+                flex-direction:row;
+                width:60vw;
+                justify-content: space-evenly;
+                align-items: baseline;
+                list-style-type: none;
+                text-decoration: none;
+                padding:0;
+
+                li a{
+                    text-decoration: none;
+                    color:rgba(4, 0, 148, 1);
+                    font-family:roboto, sans-serif;
+                    font-weight:bold;
+                    font-size:1.3em;
+                }
+                li button{
+                    background-color: #00A5FF;
+                    border-radius:13px;
+                    border: none;
+                    color:white;
+                    font-size:1.5em;
+                    width:152px;
+                    height:57px;
+                }
+            }
+        }
+        .section1{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .column1{
+                width:50vw;
+                height:60vh;
+                margin-top:5vh;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                h1{
+                    font-family: roboto, sans-serif;
+                    color:#040094;
+                    font-weight:bold;
+                    font-size:3.5em;
+                }
+                h2{
+                    font-family: roboto, sans-serif;
+                    color:#040094;
+                    font-weight:normal;
+                    font-size:1.8em;
+                }
+                p{
+                    font-family: roboto, sans-serif;
+                    color:#040094;
+                    font-weight: 600;
+                    font-size:1.6em;
+                    text-align:center;
+                }
+
+                #buttons{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: space-between;
+                    width:35vw;
+
+                    button{
+                        width:200px;
+                        height:75px;
+                        background-color:white;
+                        border-radius:13px;
+                        border:2px solid #00A5FF;
+                        color:#00A5FF;
+                        font-size:1.5em;
+                        font-weight:bold;
+                        font-family:roboto, sans-serif;
+                    }
+                    .filled{
+                        background-color:#00A5FF;
+                        color:white;
+                    }
+
+                }
+            }
+            .column2{
+                width:45vw;
+                height:100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+
+                img{
+                    max-width:90%;
+                    height:auto;
+                }
+            }
+            .help_button{
+                z-index:100;
+                position:fixed;
+                bottom:5px;
+                right:0;
+
+                img{
+                    max-width:70%;
+                    height:auto;
+                    transition:0.3s linear;
+                }
+                img:hover{
+                    transform:scale(0.95);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .goal{
+            width:100vw;
+            height:50vh;
+            display:flex;
+            align-content: center;
+            align-items:center;
+            justify-content: center;
+
+            h1{
+                font-size:5em;
+                color:#040094;
+                font-family: franklin gothic medium, sans-serif;
+                text-align: center;
+            }
+
+            img{
+                max-width:100vw;
+                height:auto;
+                z-index:-100;
+                position:absolute;
+            }
+        }
+
+        .section2{
+            width:100vw;
+            height:100vh;
+            margin-top:10vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text_header{
+                width:95vw;
+
+                h1{
+                    font-family: roboto, sans-serif;
+                    color:#040094;
+                    font-weight:bold;
+                    font-size:3.5em;
+                }
+            }
+            .team{
+                width:95vw;
+                margin:5% 0 5% 0;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-content: flex-start;
+
+                .team1{
+                    display:flex;
+                    flex-direction: column;
+
+                    img{
+                        max-width: 100%;
+                        height:auto;
+                    }
+                    p{
+                        font-family: roboto, sans-serif;
+                        color: #00A5FF;
+                        font-weight:normal;
+                        font-size:1.3em;
+                        line-height:0.05em;
+                    }
+                    #name{
+                        color:#040094;
+                        font-size:1.8em;
+                    }
+                }
+            }
+        }
+    }
+}

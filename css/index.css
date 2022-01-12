@@ -1,0 +1,325 @@
+html {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+html body button {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+html body button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  cursor: pointer;
+}
+
+html body nav {
+  background-color: #E7F6FF;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body nav .logo {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+html body nav .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+html body nav .list ul li a {
+  text-decoration: none;
+  color: #040094;
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+html body nav .list ul li button {
+  background-color: #00A5FF;
+  border-radius: 13px;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  width: 152px;
+  height: 57px;
+}
+
+html body .section1 {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .section1 .column1 {
+  width: 50vw;
+  height: 60vh;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html body .section1 .column1 h1 {
+  font-family: roboto, sans-serif;
+  color: #040094;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+html body .section1 .column1 h2 {
+  font-family: roboto, sans-serif;
+  color: #040094;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+html body .section1 .column1 p {
+  font-family: roboto, sans-serif;
+  color: #040094;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+html body .section1 .column1 #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35vw;
+}
+
+html body .section1 .column1 #buttons button {
+  width: 200px;
+  height: 75px;
+  background-color: white;
+  border-radius: 13px;
+  border: 2px solid #00A5FF;
+  color: #00A5FF;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: roboto, sans-serif;
+}
+
+html body .section1 .column1 #buttons .filled {
+  background-color: #00A5FF;
+  color: white;
+}
+
+html body .section1 .column2 {
+  width: 45vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .section1 .column2 img {
+  max-width: 90%;
+  height: auto;
+}
+
+html body .section1 .help_button {
+  z-index: 100;
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+}
+
+html body .section1 .help_button img {
+  max-width: 70%;
+  height: auto;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+html body .section1 .help_button img:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  cursor: pointer;
+}
+
+html body .goal {
+  width: 100vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .goal h1 {
+  font-size: 5em;
+  color: #040094;
+  font-family: franklin gothic medium, sans-serif;
+  text-align: center;
+}
+
+html body .goal img {
+  max-width: 100vw;
+  height: auto;
+  z-index: -100;
+  position: absolute;
+}
+
+html body .section2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .section2 .text_header {
+  width: 95vw;
+}
+
+html body .section2 .text_header h1 {
+  font-family: roboto, sans-serif;
+  color: #040094;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+html body .section2 .team {
+  width: 95vw;
+  margin: 5% 0 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+html body .section2 .team .team1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body .section2 .team .team1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+html body .section2 .team .team1 p {
+  font-family: roboto, sans-serif;
+  color: #00A5FF;
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 0.05em;
+}
+
+html body .section2 .team .team1 #name {
+  color: #040094;
+  font-size: 1.8em;
+}
+/*# sourceMappingURL=index.css.map */
